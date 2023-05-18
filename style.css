@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 270px);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2.5em;
+}
+
+.container .card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: .5em;
+  border-bottom-left-radius: .5em;
+}
+
+.container .card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.container .card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: .5em;
+  border-bottom-right-radius: .5em;
+}
+
+.card img {
+  width: 25%;
+}
+
+.card h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1em;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+  margin-top: 1.5em;
+  margin-bottom: 5em;
+}
+
+.card a {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 14px;
+  padding: .8em 2em;
+  border-radius: 3em;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  transition: background-color 0.15s,
+  color 0.15s,
+  border 0.15s;
+}
+
+.bright-orange-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.bright-orange-btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.dark-cyan-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan-btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.very-dark-cyan-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.very-dark-cyan-btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    grid-template-columns: 270px;
+    justify-content: center;
+    padding: 1.5em;
+    margin: 1em;
+  }
+
+  .container .card1 {
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-bottom-left-radius: 0;
+  }
+  
+  .container .card3 {
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    border-top-right-radius: 0;
+  }
+}
+
