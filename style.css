@@ -6,11 +6,13 @@
 
 body {
   font-family: 'Lexend Deca', sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .container {
-  max-width: 800px;
-  margin: 100px auto;
   display: grid;
   grid-template-columns: repeat(3, 270px);
 }
@@ -124,4 +126,5 @@ body {
     border-top-right-radius: 0;
   }
 }
+
 
