@@ -109,7 +109,6 @@ body {
 @media (max-width: 375px) {
   .container {
     grid-template-columns: 270px;
-    justify-content: center;
     padding: 1.5em;
     margin: 1em;
   }
