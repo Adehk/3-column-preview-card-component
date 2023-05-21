@@ -106,7 +106,7 @@ body {
   border: 2px solid hsl(0, 0%, 95%);
 }
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
   .container {
     grid-template-columns: 270px;
     padding: 1.5em;
